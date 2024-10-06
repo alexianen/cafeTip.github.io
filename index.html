@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafeTip.css">
+    <title>Cafe Tip</title>
+</head>
+<body> 
+    
+<div class="all">
+    <div class="calculator">
+    <h1>Tip Calculator</h1>
+        <div id="totalBill">
+              <p>Enter the total price amount:</p>
+             <input type="number" id="initialPrice">
+        </div>
+        <div id="tipsSelector">
+            <p>Select the service type:</p>
+            <div id="radioBtns">
+                    <div class="radIn">
+                        <input type="radio" id="tip30" name="tip" value="0.30" class="tipRadio" checked/>
+                        <label for="tip30">Outstanding (30%) </label>
+                    </div>
+                    <div class="radIn">
+                        <input type="radio" id="tip20" name="tip" value="0.20" class="tipRadio"/>
+                        <label for="tip20">Good (20%) </label>
+                    </div>
+                    <div class="radIn">
+                        <input type="radio" id="tip15" name="tip" value="0.15" class="tipRadio"/>
+                        <label for="tip15">OKish (15%) </label>
+                    </div>
+                    <div class="radIn">
+                        <input type="radio" id="tip10" name="tip" value="0.10" class="tipRadio"/>
+                        <label for="tip10">Bad (10%)</label>
+                    </div>
+                    <div class="radIn">
+                        <input type="radio" id="tip0" name="tip" value="0" class="tipRadio"/>
+                        <label for="tip0">Never coming again (0%)</label>
+                    </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>Enter amount of people:</p>
+             <select id="nrOfPeople">
+                <option value="1" class="pplSelector" selected="selected">1</option>
+                <option value="2" class="pplSelector">2</option>
+                <option value="3" class="pplSelector">3</option>
+                <option value="4" class="pplSelector">4</option>
+                <option value="5" class="pplSelector">5</option>
+                <option value="6" class="pplSelector">6</option>
+                <option value="7" class="pplSelector">7</option>
+                <option value="8" class="pplSelector">8</option>
+                <option value="9" class="pplSelector">9</option>
+                <option value="10" class="pplSelector">10</option>
+             </select>
+        </div>
+    </div>
+    <div class="result">
+        <div id="everythingElse">
+            <h1>Results</h1>
+            <button type ="button" class="button" id="calculateBtn">Calculate</button>
+            <div id="textResult">
+                <div class="eachResult">
+                    <p id="textTipPerson">Tip amount / person:</p>
+                    <p id="tipPerson">0</p>
+                </div>
+                <div class="eachResult">
+                    <p id="textTotalPerson">Total amount / person:</p>
+                    <p id="totalPerson">0</p>
+                </div>
+                <div class="eachResult">
+                    <p id="textTotalAmount">Total amount:</p>
+                    <p id="totalAmount">0</p>
+                </div>
+            </div>
+        </div>
+        <div id="resetDiv">
+            <button type="button" class="button" id="resetBtn">Reset</button>
+        </div>
+
+    </div>
+</div>
+<script src="cafeTip.js"></script>
+</body>
+</html>

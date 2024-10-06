@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-image: url("https://pbs.twimg.com/media/GYT6yqUX0AAb57l?format=png&name=small");
+  background-size: cover;
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin-top: 7rem;
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: rgba(99, 107, 116, 0.2) 0px 8px 24px;
+  width: 600px;
+  gap: 40px;
+}
+
+#tipsSelector p {
+  margin-bottom: 0px;
+}
+
+.calculator {
+  margin-right: 3rem;
+}
+
+#radioBtns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+label{
+  width: calc(100%/3);
+}
+
+
+.radIn {
+  display: block;
+}
+
+
+input {
+  height: 24px;
+  padding: 4px 8px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: .5s ease;
+}
+
+
+
+button {
+  background-color: #2a49b6;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #371ba7;
+}
+
+.eachResult #textTipPerson {
+  margin-bottom: 0px;
+}
+.eachResult #tipPerson {
+  margin-top: 4px;
+}
+
+.eachResult #textTotalPerson {
+  margin-bottom: 0px;
+}
+.eachResult #totalPerson {
+  margin-top: 4px;
+}
+
+.eachResult #textTotalAmount {
+  margin-bottom: 0px;
+}
+
+.eachResult #totalAmount {
+  margin-top: 4px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+  background-color: rgba(255,255,255,0.75);
+  padding: 0px 20px 0px 20px;
+  border-radius: 16px;
+  width: 200px;
+}
+
+.calculator h1 {
+  margin-bottom: 0px;
+}
+
+#totalBill p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#nrOfPeople {
+  height: 24px;
+  padding: 0px 8px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: .5s ease;
+}
+
+
+.dropdown p {
+  margin-bottom: 8px;
+}
